@@ -3,7 +3,6 @@ $logFile = ".\switch_port_status.txt"
 $snmpwalk = ".\bin\snmpwalk.exe"
 $oid_ifOperStatus = ".1.3.6.1.2.1.2.2.1.8"  
 $community = "aapico"
-
 $result = @{}
 $record = @{}
 

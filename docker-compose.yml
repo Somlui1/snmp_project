@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  snmp-monitor:
+    build: .
+    container_name: snmp_monitor
+    volumes:
+      - ./logs:/app/logs   # log จาก container จะเก็บบน host
+    environment:
+      - IP=10.10.100.248
+      - COMMUNITY=aapico
+    restart: always
