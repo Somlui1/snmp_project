@@ -1,2 +1,5 @@
-\bin
-!\bin\snmpwalk.exe
+# Ignore โฟลเดอร์ bin ทั้งหมด
+bin/
+
+# ยกเว้นไฟล์ snmpwalk.exe
+!bin/snmpwalk.exe
