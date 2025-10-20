@@ -1,4 +1,3 @@
-# Use lightweight Linux image with snmp tools
 FROM ubuntu:22.04
 
 # Install dependencies
@@ -9,11 +8,14 @@ RUN apt-get update && \
 # Set workdir
 WORKDIR /app
 
-# Copy the script into container
+# Copy script
 COPY main.sh /app/main.sh
 
-# Make it executable
+# Make executable
 RUN chmod +x /app/main.sh
 
-# Run the script by default
+# Create log folder
+RUN mkdir -p /app/logs
+
+# Default command
 CMD ["/app/main.sh"]

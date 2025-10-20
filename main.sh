@@ -1,5 +1,3 @@
-  GNU nano 7.2                                                                                                                             main.sh
-#!/bin/bash
 
 IP="10.10.100.248"
 LOGFILE="./switch_port_status.txt"
